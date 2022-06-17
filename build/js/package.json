@@ -1,0 +1,16 @@
+{
+  "name": "edge",
+  "version": "1.0-SNAPSHOT",
+  "private": true,
+  "workspaces": [
+    "packages/edge-js-legacy",
+    "packages/edge-js-legacy-test",
+    "packages/edge-js-ir"
+  ],
+  "resolutions": {},
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

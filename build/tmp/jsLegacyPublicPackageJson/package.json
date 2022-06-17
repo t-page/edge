@@ -1,0 +1,10 @@
+{
+  "name": "edge-js-legacy",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "edge-js-legacy.js",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

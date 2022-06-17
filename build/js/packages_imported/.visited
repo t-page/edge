@@ -1,0 +1,20 @@
+{
+  "version": "9",
+  "items": {
+    "20f4a950760cebba1fc6f9bf1249ddd9": {
+      "src": "/Users/tompage/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.10/6b84d926e28493be69daf673e40076f89492ef7/kotlin-stdlib-common-1.5.10.jar"
+    },
+    "337ff817e087aded273dfc9ba494baf4": {
+      "src": "/Users/tompage/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js-runner/1.5.10/20ef83e15f8c2cde090f3bfd8c1eba72947f7ab8/kotlin-test-js-runner-1.5.10.jar",
+      "target": "kotlin-test-js-runner/1.5.10"
+    },
+    "1573a548ffa9f67e4feb0f2e89e1350e": {
+      "src": "/Users/tompage/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js/1.5.10/a81b0896d15768898359a9d7129096bbb6f36c78/kotlin-test-js-1.5.10.jar",
+      "target": "kotlin-test/1.5.10"
+    },
+    "1bf77f7ef45885b86fa4f1a02ed10053": {
+      "src": "/Users/tompage/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.5.10/2cab0f51a869235a20bdafb360b698b9083fc61/kotlin-stdlib-js-1.5.10.jar",
+      "target": "kotlin/1.5.10"
+    }
+  }
+}

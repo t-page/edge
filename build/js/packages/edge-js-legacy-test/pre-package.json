@@ -1,0 +1,28 @@
+{
+  "name": "edge-js-legacy-test",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "kotlin/edge-js-legacy-test.js",
+  "devDependencies": {
+    "karma": "6.3.2",
+    "karma-mocha": "2.0.1",
+    "mocha": "8.3.2",
+    "karma-webpack": "5.0.0",
+    "webpack": "5.35.0",
+    "webpack-cli": "4.6.0",
+    "format-util": "1.0.5",
+    "source-map-loader": "2.0.1",
+    "karma-sourcemap-loader": "0.3.8",
+    "karma-chrome-launcher": "3.1.0",
+    "css-loader": "5.2.4",
+    "style-loader": "2.0.0"
+  },
+  "dependencies": {
+    "edge-js-legacy": "1.0.0-SNAPSHOT",
+    "kotlin-test": "file:/Users/tompage/edge/edge/build/js/packages_imported/kotlin-test/1.5.10",
+    "kotlin": "file:/Users/tompage/edge/edge/build/js/packages_imported/kotlin/1.5.10",
+    "kotlin-test-js-runner": "file:/Users/tompage/edge/edge/build/js/packages_imported/kotlin-test-js-runner/1.5.10"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

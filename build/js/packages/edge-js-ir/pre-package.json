@@ -1,0 +1,16 @@
+{
+  "name": "edge-js-ir",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "kotlin/edge-js-ir.js",
+  "devDependencies": {
+    "dukat": "0.5.8-rc.4"
+  },
+  "dependencies": {
+    "kotlin-test-js-runner": "file:/Users/tompage/edge/edge/build/js/packages_imported/kotlin-test-js-runner/1.5.10",
+    "kotlin-test": "file:/Users/tompage/edge/edge/build/js/packages_imported/kotlin-test/1.5.10",
+    "kotlin": "file:/Users/tompage/edge/edge/build/js/packages_imported/kotlin/1.5.10"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
