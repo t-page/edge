@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="effects.OptionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-16T16:04:54" hostname="Toms-MacBook-Pro.local" time="0.007">
-  <properties/>
-  <testcase name="testCreateSome[jsLegacy, browser, ChromeHeadless102.0.5005.115, MacOS10.15.7]" classname="effects.OptionTest" time="0.007"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

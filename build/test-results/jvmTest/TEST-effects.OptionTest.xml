@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="effects.OptionTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-17T16:41:00" hostname="Toms-MacBook-Pro.local" time="0.05">
+<testsuite name="effects.OptionTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-21T11:22:22" hostname="Toms-MacBook-Pro.local" time="0.025">
   <properties/>
-  <testcase name="testSomeFlatMap()[jvm]" classname="effects.OptionTest" time="0.05">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Some(value=10)&gt; but was: &lt;Some(value=Some(value=10))&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Some(value=10)&gt; but was: &lt;Some(value=Some(value=10))&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1135)
-	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
-	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
-	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
-	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
-	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
-	at effects.OptionTest.testSomeFlatMap(OptionTest.kt:28)
+  <testcase name="testFoldForNone()[jvm]" classname="effects.OptionTest" time="0.025">
+    <failure message="org.opentest4j.AssertionFailedError: Expected value to be true." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected value to be true.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:109)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:648)
+	at kotlin.test.junit5.JUnit5Asserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.Asserter$DefaultImpls.assertTrue(Assertions.kt:658)
+	at kotlin.test.junit5.JUnit5Asserter.assertTrue(JUnitSupport.kt:30)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertTrue(Assertions.kt:44)
+	at kotlin.test.AssertionsKt.assertTrue(Unknown Source)
+	at effects.OptionTest.testFoldForNone(OptionTest.kt:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

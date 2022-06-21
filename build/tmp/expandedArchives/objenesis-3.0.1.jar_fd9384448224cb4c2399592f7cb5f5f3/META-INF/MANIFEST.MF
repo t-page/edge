@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.objenesis
+Built-By: hetr
+Bnd-LastModified: 1539909925662
+Specification-Title: Objenesis
+Implementation-Vendor-Id: org.objenesis
+Import-Package: sun.misc;resolution:=optional,COM.newmonics.PercClassl
+ oader;resolution:=optional,sun.reflect;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Export-Package: org.objenesis;uses:="org.objenesis.instantiator,org.ob
+ jenesis.strategy";version="3.0.1",org.objenesis.instantiator.sun;uses
+ :="org.objenesis.instantiator,org.objenesis.instantiator.annotations"
+ ;version="3.0.1",org.objenesis.instantiator.util;uses:="sun.misc";ver
+ sion="3.0.1",org.objenesis.instantiator.perc;uses:="org.objenesis.ins
+ tantiator,org.objenesis.instantiator.annotations";version="3.0.1",org
+ .objenesis.instantiator.basic;uses:="org.objenesis.instantiator,org.o
+ bjenesis.instantiator.annotations";version="3.0.1",org.objenesis.inst
+ antiator.gcj;uses:="org.objenesis.instantiator,org.objenesis.instanti
+ ator.annotations";version="3.0.1",org.objenesis.instantiator.annotati
+ ons;version="3.0.1",org.objenesis.instantiator;version="3.0.1",org.ob
+ jenesis.instantiator.android;uses:="org.objenesis.instantiator,org.ob
+ jenesis.instantiator.annotations";version="3.0.1",org.objenesis.strat
+ egy;uses:="org.objenesis.instantiator";version="3.0.1"
+Bundle-Name: Objenesis
+Implementation-Title: Objenesis
+Bundle-Description: A library for instantiating Java objects
+Automatic-Module-Name: org.objenesis
+Implementation-Version: 3.0.1
+Specification-Vendor: Joe Walnes, Henri Tremblay, Leonardo Mesquita
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Joe Walnes, Henri Tremblay, Leonardo Mesquita
+Tool: Bnd-4.0.0.201805111645
+Implementation-Vendor: Joe Walnes, Henri Tremblay, Leonardo Mesquita
+Bundle-Version: 3.0.1
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_171
+Specification-Version: 3.0.1
+Implementation-URL: http://objenesis.org
+

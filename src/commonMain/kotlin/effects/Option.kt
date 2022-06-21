@@ -1,11 +1,18 @@
 package effects
 
-sealed class Option
+sealed class Option {
+    fun fold(someFunction: () -> Unit, noneFunction: () -> Unit ) {
+        when(this) {
+            is Some<*> -> someFunction()
+            is None -> noneFunction()
+        }
+    }
+}
 
 data class Some<T>(val value: T): Option() {
     fun show(): T = this.value
-    fun <A>map(f: (T) -> A): Option = optionFrom(f(this.value))
-    fun <A>flatMap(f: (T) -> Some<A>): Option = f(this.value)
+    fun <A>map(f: (T) -> A): Some<A> = createSome(f(this.value))
+    fun <A>flatMap(f: (T) -> Some<A>): Some<A> = f(this.value)
 }
 
 object None: Option() {
@@ -19,4 +26,4 @@ fun <T> optionFrom(value: T?): Option {
     }
 }
 
-fun <T> createSome(value: T): Option = Some(value)
+fun <T> createSome(value: T): Some<T> = Some(value)

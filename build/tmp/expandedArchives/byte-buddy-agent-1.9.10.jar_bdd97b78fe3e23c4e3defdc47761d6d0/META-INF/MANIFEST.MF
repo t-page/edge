@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-Description: The Byte Buddy Java agent allows to access the JVM
+ 's HotSwap feature.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: net.bytebuddy.byte-buddy-agent
+Built-By: rafael
+Agent-Class: net.bytebuddy.agent.Installer
+Bnd-LastModified: 1549907906307
+Bundle-ManifestVersion: 2
+Can-Redefine-Classes: true
+Import-Package: com.sun.tools.attach;resolution:=optional,com.ibm.tool
+ s.attach;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Can-Set-Native-Method-Prefix: true
+Tool: Bnd-3.5.0.201709291849
+Export-Package: net.bytebuddy.agent;version="1.9.10"
+Premain-Class: net.bytebuddy.agent.Installer
+Bundle-Name: Byte Buddy Java agent
+Bundle-Version: 1.9.10
+Multi-Release: true
+Can-Retransform-Classes: true
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_201
+

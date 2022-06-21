@@ -41,6 +41,7 @@ kotlin {
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+                implementation("io.mockk:mockk:1.9.3")
             }
         }
         val jvmMain by getting
