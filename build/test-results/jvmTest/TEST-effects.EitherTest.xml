@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="effects.EitherTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-06-21T13:42:41" hostname="Toms-MacBook-Pro.local" time="0.044">
+  <properties/>
+  <testcase name="testRightFlatMap()[jvm]" classname="effects.EitherTest" time="0.036"/>
+  <testcase name="testRightMap()[jvm]" classname="effects.EitherTest" time="0.001"/>
+  <testcase name="testLeftMap()[jvm]" classname="effects.EitherTest" time="0.001"/>
+  <testcase name="testResolveRightFun()[jvm]" classname="effects.EitherTest" time="0.001"/>
+  <testcase name="testResolveLeftFun()[jvm]" classname="effects.EitherTest" time="0.001"/>
+  <testcase name="testLeftFlatMap()[jvm]" classname="effects.EitherTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

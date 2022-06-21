@@ -11,7 +11,7 @@ sealed class Option {
 
 data class Some<T>(val value: T): Option() {
     fun show(): T = this.value
-    fun <A>map(f: (T) -> A): Some<A> = createSome(f(this.value))
+    fun <A>map(f: (T) -> A): Some<A> = Some(f(this.value))
     fun <A>flatMap(f: (T) -> Some<A>): Some<A> = f(this.value)
 }
 
