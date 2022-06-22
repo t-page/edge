@@ -39,23 +39,30 @@ class OptionTest {
     }
 
     @Test
-    fun testFoldForSome() {
+    fun testResolveForSome() {
         val startingSome = Some(10)
         var someCounter = 0
 
-        startingSome.fold({ someCounter = 1 }, { someCounter = 0 })
+        startingSome.resolve({ someCounter = 1 }, { someCounter = 0 })
 
         assertTrue { someCounter == 1 }
     }
 
     @Test
-    fun testFoldForNone() {
+    fun testResolveForNone() {
         val startingSome = None
         var someCounter = 0
 
-        startingSome.fold({ someCounter = 1 }, { someCounter = 0 })
+        startingSome.resolve({ someCounter = 1 }, { someCounter = 0 })
 
         assertTrue { someCounter == 0 }
+    }
+
+    @Test
+    fun testFlattenForSomeOfSome() {
+        val someOfSome = Some(Some(10))
+
+        assertEquals(Some(10), someOfSome.flatten())
     }
 
     @Test

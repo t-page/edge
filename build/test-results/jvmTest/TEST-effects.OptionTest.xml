@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="effects.OptionTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-06-22T11:31:20" hostname="Toms-MacBook-Pro.local" time="0.039">
+  <properties/>
+  <testcase name="testNone()[jvm]" classname="effects.OptionTest" time="0.025"/>
+  <testcase name="testShow()[jvm]" classname="effects.OptionTest" time="0.002"/>
+  <testcase name="testMultipleMapsTogether()[jvm]" classname="effects.OptionTest" time="0.001"/>
+  <testcase name="testSomeFlatMap()[jvm]" classname="effects.OptionTest" time="0.0"/>
+  <testcase name="testResolveForNone()[jvm]" classname="effects.OptionTest" time="0.001"/>
+  <testcase name="testResolveForSome()[jvm]" classname="effects.OptionTest" time="0.001"/>
+  <testcase name="testCreateSome()[jvm]" classname="effects.OptionTest" time="0.0"/>
+  <testcase name="testOptionFrom()[jvm]" classname="effects.OptionTest" time="0.0"/>
+  <testcase name="testSomeMap()[jvm]" classname="effects.OptionTest" time="0.001"/>
+  <testcase name="testFlattenForSomeOfSome()[jvm]" classname="effects.OptionTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

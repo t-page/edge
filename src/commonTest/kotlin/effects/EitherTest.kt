@@ -1,9 +1,6 @@
 package effects
 
-import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
+import kotlin.test.*
 
 class EitherTest {
     @Test
@@ -58,5 +55,39 @@ class EitherTest {
         left.resolve( { leftCounter = 0 }, { leftCounter = 1 })
 
         assertTrue { leftCounter == 1 }
+    }
+
+    @Test
+    fun testFlattenLeftOfRight() {
+        val leftOfRight = Left(Right(1))
+
+        assertEquals(Right(1), leftOfRight.flatten())
+    }
+
+    @Test
+    fun testFlattenRightOfLeft() {
+        val rightOfLeft = Right(Left(1))
+
+        assertEquals(Left(1), rightOfLeft.flatten())
+    }
+
+    @Test
+    fun testFlattenThrowsErrorWithRight() {
+        val right = Right(1)
+
+        assertFailsWith(
+            UnableToFlattenEither::class,
+            "This is not an Either. Unable to flatten"
+        ) { right.flatten() }
+    }
+
+    @Test
+    fun testFlattenThrowsErrorWithLeft() {
+        val left = Left(1)
+
+        assertFailsWith(
+            UnableToFlattenEither::class,
+            "This is not an Either. Unable to flatten"
+        ) { left.flatten() }
     }
 }
