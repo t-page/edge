@@ -66,6 +66,47 @@ class OptionTest {
     }
 
     @Test
+    fun testCombineForSomeInt() {
+        val firstSome = Some(10)
+        val secondSome = Some(10)
+
+        val result = firstSome.combine(secondSome)
+
+        assertEquals(Some(20), result)
+    }
+
+    @Test
+    fun testCombineForSomeString() {
+        val firstSome = Some("ting ")
+        val secondSome = Some("ting!")
+
+        val result = firstSome.combine(secondSome)
+
+        assertEquals(Some("ting ting!"), result)
+    }
+
+    @Test
+    fun testCombineForSomeChar() {
+        val s = "AB"
+        val a: Some<Char> = Some(s[0])
+        val b: Some<Char> = Some(s[1])
+
+        val result = a.combine(b)
+
+        assertEquals(Some("AB"), result)
+    }
+
+    @Test
+    fun testCombineForNone() {
+     val noneOne = None
+     val noneTwo = None
+
+     val result = noneOne.combine(noneTwo)
+
+     assertEquals(None, result)
+    }
+
+    @Test
     fun testShow() = assertEquals(10, Some(10).show())
 
     @Test

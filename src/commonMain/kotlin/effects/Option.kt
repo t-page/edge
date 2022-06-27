@@ -21,9 +21,21 @@ data class Some<T>(val value: T): Option() {
             else -> throw UnableToFlattenOption("This is not an Option. Unable to flatten")
         }
     }
+
+    fun combine(someToAdd: Some<*>): Some<*> {
+        return when (someToAdd.value) {
+            is Int -> Some(this.value as Int + someToAdd.value)
+            is Number -> Some(this.value as Number + someToAdd.value)
+            is Long -> Some(this.value as Long + someToAdd.value)
+            is Char -> Some(this.value.toString() + someToAdd.value.toString())
+            is String -> Some(this.value as String + someToAdd.value)
+            else -> Some("ting")
+        }
+    }
 }
 
 object None: Option() {
+    fun combine(secondSome: None): None = None
     fun show(): Nothing? = null
 }
 
@@ -35,5 +47,7 @@ fun <T> optionFrom(value: T?): Option {
 }
 
 fun <T> createSome(value: T): Some<T> = Some(value)
+
+private operator fun <T> T.plus(value: T): T =  this + value
 
 class UnableToFlattenOption(message: String): Exception(message)
